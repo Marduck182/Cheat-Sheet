@@ -1,0 +1,46 @@
+{
+	"Create Component": {
+		"scope": "typescriptreact",
+		"prefix": "rafc",
+		"body": [
+			"import React from \"react\";",
+			"import { View } from 'react-native';",
+			"",
+			"",
+			"export const $TM_FILENAME_BASE = () => {",
+			"\treturn (",
+			"\t\t<View>",
+			"",
+			"\t\t</View>",
+			"\t)",
+			"}"
+		],
+		"description": "Crea la estructura del componente"
+	},
+	"Create State": {
+		"scope": "typescriptreact",
+		"prefix": "useState",
+		"body": "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState($0);",
+		"description": "Crea la estructura del useState"
+	},
+	"Create Style": {
+		"scope": "typescriptreact",
+		"prefix": "rStyle",
+		"body": [
+			"const styles = StyleSheet.create({",
+			"\t${1:container}: {",
+			"\t\tflex: 1,",
+			"\t\tbackgroundColor: 'gray',",
+			"\t\tjustifyContent: 'center'",
+			"\t}",
+			"})"
+		],
+		"description": "Crea la estructura del Style para los componentes"
+	},
+	"Create Component Style": {
+		"scope": "typescriptreact",
+		"prefix": "cStyle",
+		"body": "style = { styles.${1:container} }$0 ",
+		"description": "crea la estrucura del Style para un componente individual"
+	}
+}
